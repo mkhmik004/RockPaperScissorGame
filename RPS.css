@@ -1,0 +1,16 @@
+*{
+    background-image:url(/image/orbit.jpg) ;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+    background-repeat: no-repeat;
+}
+img{
+    height: auto;
+    width: 100rem;
+    background-color: transparent;
+}
+button{
+    
+}
