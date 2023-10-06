@@ -4,13 +4,10 @@
     margin: 0;
     padding: 0;
     color: antiquewhite;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 img{
     height: auto;
-    width: 100rem;
+    width: 100vh;
     background-color: transparent;
-}
-button{
-    
 }
