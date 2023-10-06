@@ -1,21 +1,26 @@
 //computer random selection from list of string
-let choice=["rock" , "paper", "scissors"];
+const choice=["rock" , "paper", "scissors"];
 function getComputerChoice() {
-    return choice[Math.floor(((Math.random(0,2)))*3)];
+    return choice[Math.floor(((Math.random()))*3)];
 }
-//player input 
-function getPlayerChoice(){
-    return ('rOcK'); //........NB. MUST PROMT USER..........
-}
+
 //assign selections to variables
-const computerSelection=getComputerChoice();
-const playerSelection=getPlayerChoice().toLowerCase();
-console.log(computerSelection,playerSelection);
+let computerS=getComputerChoice();
+let playerS=prompt("rock,paper scissor shooot");
+console.log();
 //compare computer string and player string
-function playRound(computerSelection,playerSelection){
-    console.log(computerSelection,playerSelection);
+function playRound(playerSelection, computerSelection){
+   if (playerSelection.toLowerCase()===computerSelection){
+    console.log("Tie");
+   }
+   else if (playerSelection.toLowerCase()==="rock" && computerSelection==="scissor" || playerSelection==="paper" && computerSelection==="rock" || playerSelection==="scissor" && computerSelection==="paper" ){
+    console.log("ohhh, you Win this round")
+   }
+   else{
+    console.log("Oppps, you lose")
+   }
 }
-playRound()
+playRound(playerS,computerS,)
 
 
 
